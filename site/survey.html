@@ -38,10 +38,10 @@
 <body>
     <h1>Sunfiver Survey</h1>
     <form action="https://go.sunfiver.com/submit-survey" method="POST">
-        <label for="name">Name:</label>
+        <label for="name">First Name:</label>
         <input type="text" id="name" name="name" required>
 
-        <label for="email">Email:</label>
+        <label for="email">Email:</label>   
         <input type="email" id="email" name="email" required>
 
         <label for="sell">Yes, I would  permanently move to space if that was an option</label>
@@ -54,15 +54,17 @@
         <input type="checkbox" id="work" name="work" value="yes">
         <label for="family">Yes, I could convince my family (spouse, significant other, kids, dependents) to move to space</label>
         <input type="checkbox" id="family" name="family" value="yes">
-        <label for="deposit">Yes, I want to pay a deposit to reserve a home in space</label>
+        <label for="deposit">Yes, I want to pay a deposit to reserve a home in space.  (No deposit today, we'll be in touch)</label>
         <input type="checkbox" id="deposit" name="deposit" value="yes">
         <label for="deposit_amount">How much I am willing to deposit to make it happen:</label>
         <input type="number" id="deposit_amount" name="deposit_amount" min="0" step="1000">
-        <label for="price">How much I am willing to pay for a home in space:</label>
-        $<input type="number" id="price" name="price" min="100000" step="100000">
+        <label for="price">Roughly how much my current home is worth, and how much I might pay for one in space (in my country's currency)</label>
+        <input type="number" id="price" name="price" min="100000" step="100000">
+        <label for ="rent_price">How much I pay to rent my home per month, and how much I would likely be able to afford to rent one in space (in my country's currency)</label>
+        <input type="number" id="rent_price" name="rent_price" min="1000" step="1000">
         <label for="Country">Country I live in now:</label>
         <input type="text" id="country" name="country" required>
-        <label for="earthlike">What does earth like enough mean to me?  Oxygen, food, clothes, fast amazon delivery?</label>
+        <label for="earthlike">What does earth like enough mean to me?  Oxygen, food, clothes, gravity, fast amazon delivery?</label>
         <textarea id="earthlike" name="earthlike" rows="5" required></textarea>
 
         <label for="feedback">What didn't we ask that we really should have?</label>
