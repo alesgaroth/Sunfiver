@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunfiver Survey</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, select, textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sunfiver Survey</h1>
+    <form action="https://go.sunfiver.com/submit-survey" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="sell">Yes, I would  permanently move to space if that was an option</label>
+        <input type="checkbox" id="sell" name="sell" value="yes">
+        <label for="buy">Yes, I would  buy a home in space if it was earth like enough</label>
+        <input type="checkbox" id="buy" name="buy" value="yes">
+        <label for="rent">Yes, I would  rent a home in space if it was earth like enough</label>
+        <input type="checkbox" id="rent" name="rent" value="yes">
+        <label for="work">Yes, I would like to work in space</label>
+        <input type="checkbox" id="work" name="work" value="yes">
+        <label for="family">Yes, I could convince my family (spouse, significant other, kids, dependents) to move to space</label>
+        <input type="checkbox" id="family" name="family" value="yes">
+        <label for="deposit">Yes, I want to pay a deposit to reserve a home in space</label>
+        <input type="checkbox" id="deposit" name="deposit" value="yes">
+        <label for="deposit_amount">How much I am willing to deposit to make it happen:</label>
+        <input type="number" id="deposit_amount" name="deposit_amount" min="0" step="1000">
+        <label for="price">How much I am willing to pay for a home in space:</label>
+        $<input type="number" id="price" name="price" min="100000" step="100000">
+        <label for="Country">Country I live in now:</label>
+        <input type="text" id="country" name="country" required>
+        <label for="earthlike">What does earth like enough mean to me?  Oxygen, food, clothes, fast amazon delivery?</label>
+        <textarea id="earthlike" name="earthlike" rows="5" required></textarea>
+
+        <label for="feedback">What didn't we ask that we really should have?</label>
+        <textarea id="feedback" name="feedback" rows="5" required></textarea>
+
+        <label for="comments">Any other comments?</label>
+        <textarea id="comments" name="comments" rows="5"></textarea>
+        <label for="hear">How did you hear about us?</label>
+        <select id="hear" name="hear">
+            <option value="friend">Friend</option>
+            <option value="social_media">Social Media</option>
+            <option value="news_article">News Article</option>
+            <option value="other">Other</option>
+        </select>
+        <label for="other">If other, please specify:</label>
+        <input type="text" id="other" name="other">
+    
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
