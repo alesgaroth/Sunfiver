@@ -12,18 +12,6 @@
 
     <title>Sun Fiver</title>
     <style type="text/css">
-      .left {
-        float: left;
-        font-family: sans-serif;
-        font-size: 400%;
-        max-width: 400px;
-      }
-      .right {
-        float: right;
-        font-family: sans-serif;
-        font-size: 400%;
-        max-width: 400px;
-      }
 
 
     </style>
@@ -101,17 +89,10 @@
             <p>
               email <a href="mailto:sunfiver@alesgaroth.com">sunfiver@alesgaroth.com</a>
             </p>
-            <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-            <script>
-              function onSubmit(token) {
-                  document.getElementById("form").submit();
-              }
-            </script>
-            <form id="form" method="post" action="https://go.sunfiver.com/signup.php">
-              <div><label for="name">Your First Name</label><input type="text" name="name" placeholder="First Name" required></div>
-              <div><label for="email">Your Email:</label><input type="email" name="email" placeholder="Email" required></div>
-              <button class="g-recaptcha" data-sitekey="6Lck7yIrAAAAAJGedxt7nBgxHbSScMTxdsE-JsjU" data-callback="onSubmit" data-action="submit">Sign up</button>
-            </form>
+            <p>Join The Sun Fiver Society</p>
+            <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+            <stripe-buy-button buy-button-id="buy_btn_1RYn0PAMfPcKqpNzw72ZwuMb" publishable-key="pk_live_51RUyLLAMfPcKqpNzb3mgzunpyLwO5EBckycsTIzLqTiQ7oxufYfu6Sb62xSMocBCLkVhpMnqQO1ilokFaiaPIN2F00L2avCfxR"> </stripe-buy-button>
+            <stripe-buy-button buy-button-id="buy_btn_1RYn1kAMfPcKqpNzjo1Tk3tb" publishable-key="pk_live_51RUyLLAMfPcKqpNzb3mgzunpyLwO5EBckycsTIzLqTiQ7oxufYfu6Sb62xSMocBCLkVhpMnqQO1ilokFaiaPIN2F00L2avCfxR"> </stripe-buy-button>
           </div>
         </div>
         <div class="col-md-4">
