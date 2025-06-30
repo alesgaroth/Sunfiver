@@ -1,0 +1,86 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="95" fill="none" stroke="#1a1a2e" stroke-width="2"/>
+  
+  <!-- Stars background -->
+  <circle cx="40" cy="40" r="1.5" fill="#ffd700"/>
+  <circle cx="160" cy="35" r="1" fill="#ffd700"/>
+  <circle cx="170" cy="70" r="1.5" fill="#ffd700"/>
+  <circle cx="30" cy="80" r="1" fill="#ffd700"/>
+  <circle cx="180" cy="130" r="1" fill="#ffd700"/>
+  <circle cx="25" cy="150" r="1.5" fill="#ffd700"/>
+  <circle cx="45" cy="170" r="1" fill="#ffd700"/>
+  
+  <!-- Central planet/space habitat -->
+  <circle cx="100" cy="100" r="35" fill="#4a90e2" stroke="#1a1a2e" stroke-width="2"/>
+  
+  <!-- Orbital rings around the habitat -->
+  <circle cx="100" cy="100" r="50" fill="none" stroke="#16537e" stroke-width="1.5" opacity="0.6"/>
+  <circle cx="100" cy="100" r="65" fill="none" stroke="#16537e" stroke-width="1" opacity="0.4"/>
+  
+  <!-- Human figures arranged in a circle around the habitat -->
+  <g transform="translate(100,100)">
+    <!-- Figure 1 -->
+    <g transform="rotate(0) translate(0,-75)">
+      <circle cx="0" cy="-8" r="4" fill="#ff6b6b"/>
+      <rect x="-2" y="-4" width="4" height="12" rx="2" fill="#ff6b6b"/>
+      <rect x="-1" y="8" width="2" height="8" rx="1" fill="#ff6b6b"/>
+    </g>
+    
+    <!-- Figure 2 -->
+    <g transform="rotate(60) translate(0,-75)">
+      <circle cx="0" cy="-8" r="4" fill="#4ecdc4"/>
+      <rect x="-2" y="-4" width="4" height="12" rx="2" fill="#4ecdc4"/>
+      <rect x="-1" y="8" width="2" height="8" rx="1" fill="#4ecdc4"/>
+    </g>
+    
+    <!-- Figure 3 -->
+    <g transform="rotate(120) translate(0,-75)">
+      <circle cx="0" cy="-8" r="4" fill="#45b7d1"/>
+      <rect x="-2" y="-4" width="4" height="12" rx="2" fill="#45b7d1"/>
+      <rect x="-1" y="8" width="2" height="8" rx="1" fill="#45b7d1"/>
+    </g>
+    
+    <!-- Figure 4 -->
+    <g transform="rotate(180) translate(0,-75)">
+      <circle cx="0" cy="-8" r="4" fill="#f7b731"/>
+      <rect x="-2" y="-4" width="4" height="12" rx="2" fill="#f7b731"/>
+      <rect x="-1" y="8" width="2" height="8" rx="1" fill="#f7b731"/>
+    </g>
+    
+    <!-- Figure 5 -->
+    <g transform="rotate(240) translate(0,-75)">
+      <circle cx="0" cy="-8" r="4" fill="#5f27cd"/>
+      <rect x="-2" y="-4" width="4" height="12" rx="2" fill="#5f27cd"/>
+      <rect x="-1" y="8" width="2" height="8" rx="1" fill="#5f27cd"/>
+    </g>
+    
+    <!-- Figure 6 -->
+    <g transform="rotate(300) translate(0,-75)">
+      <circle cx="0" cy="-8" r="4" fill="#00d2d3"/>
+      <rect x="-2" y="-4" width="4" height="12" rx="2" fill="#00d2d3"/>
+      <rect x="-1" y="8" width="2" height="8" rx="1" fill="#00d2d3"/>
+    </g>
+  </g>
+  
+  <!-- Connecting lines between figures (community bonds) -->
+  <g opacity="0.3" stroke="#1a1a2e" stroke-width="1" fill="none">
+    <line x1="100" y1="25" x2="143.3" y2="62.5"/>
+    <line x1="143.3" y1="62.5" x2="143.3" y2="137.5"/>
+    <line x1="143.3" y1="137.5" x2="100" y2="175"/>
+    <line x1="100" y1="175" x2="56.7" y2="137.5"/>
+    <line x1="56.7" y1="137.5" x2="56.7" y2="62.5"/>
+    <line x1="56.7" y1="62.5" x2="100" y2="25"/>
+  </g>
+  
+  <!-- Central symbol - rocket/tower -->
+  <g transform="translate(100,100)">
+    <rect x="-3" y="-15" width="6" height="20" rx="1" fill="#ffd700"/>
+    <polygon points="0,-20 -4,-15 4,-15" fill="#ffd700"/>
+    <rect x="-1" y="5" width="2" height="8" fill="#ffd700"/>
+  </g>
+  
+  <!-- Text could go here -->
+  <text x="100" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#1a1a2e">SUN FIVER</text>
+  <text x="100" y="187" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#1a1a2e">SPACE SOCIETY</text>
+</svg>
