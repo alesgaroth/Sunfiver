@@ -16,6 +16,10 @@ p>a {
 .col-md-4 dd {
   margin-left: 2em;
 }
+.mid>div {
+  font-family: sans-serif;
+  font-size: 300%;
+}
 .left {
   float: left;
   font-family: sans-serif;
